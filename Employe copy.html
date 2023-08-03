@@ -1,0 +1,53 @@
+<h2>Employee Datails</h2>
+<form>
+    <label >Name:</label>
+    <input type="text" id="name"><br><br>
+    
+    <label >Address:</label>
+    <input type="text" id="address"><br><br>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender">
+        <option value="">Please select</option>
+		<option value="male">Male</option>
+        <option value="female">Female</option>
+        </select><br><br>
+
+     
+     <label>D.O.B :Sagar</label>
+    <input type="date" id="dob" ><br><br>
+    
+    <label>Salary:</label>
+    <input type="text" id="salary"><br><br>
+
+    <input type="button" value="Submit" onclick="funDataSave()">    
+    <label id="order" style="display: none;">asc</label>
+</form>
+<div id="msg"></div>
+<h2>Employee Table</h2>
+<table id ="myTable" border="1">
+   
+    <thead>
+        <tr>
+            <td id='idname' data-column="name" data-order="desc">Name</td>
+            <td>Address</td>
+            <td>Gender</td>
+            <td>D.O.B</td>
+            <td>Salary</td>
+        </tr>
+    </thead>
+    
+    <tbody id="tblEmp">
+
+    </tbody>
+</table>
+
+
+
+
+<script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+   
+<script src="Employee.js"></script>
